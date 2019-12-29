@@ -17,3 +17,4 @@ powerlink_cn_joystick_SOURCES=\
 	src/screen.c \
 	src/screen.h \
 	src/CiA401_CN/objdict.h
+powerlink_cn_joystick_CFLAGS=-I src/CiA401_CN
