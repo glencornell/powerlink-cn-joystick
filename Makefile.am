@@ -15,4 +15,5 @@ powerlink_cn_joystick_SOURCES=\
 	src/options.c \
 	src/options.h \
 	src/screen.c \
-	src/screen.h
+	src/screen.h \
+	src/CiA401_CN/objdict.h
