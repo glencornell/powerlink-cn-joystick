@@ -11,14 +11,9 @@ AC_CONFIG_HEADERS([src/config.h])
 AC_PROG_CC
 PKG_PROG_PKG_CONFIG
 
-# Checks for libraries.
-AC_CHECK_LIB([pthread], [pthread_mutex_init])
-AC_CHECK_LIB([rt], [timer_create])
-AC_CHECK_LIB([oplkcn], [oplk_initialize])
-
 # Checks for modules:
 PKG_CHECK_MODULES([NCURSES],[ncurses])
-PKG_CHECK_MODULES([PCAP],[libpcap])
+PKG_CHECK_MODULES([OPENPOWERLINK],[openpowerlink])
 
 # Checks for header files.
 AC_CHECK_HEADERS([fcntl.h limits.h stddef.h stdlib.h string.h sys/time.h unistd.h])
